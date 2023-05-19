@@ -1,0 +1,43 @@
+*{
+    margin: auto;
+}
+body{
+    width: 100vw;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    gap: 341px;
+    width: 1280px;
+    height: 64px;
+    background: #2b2a2b;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+}
+a:link{
+    color: #ffffff;
+}
+.titleOfPage{
+   
+}
+.titleOfPage>a{
+    font-family:'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.4628px;
+    width: 186px;
+    height: 36px;
+    font-weight: 400;
+    font-size: 23.4628px;
+    line-height: 35px;
+    color: #ffffff;
+    opacity: 0.86;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
