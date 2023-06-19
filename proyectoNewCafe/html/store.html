@@ -1,94 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <nav id="page">
 
         <section class="titleOfPage">
-            <a href="../index.html">cafedealtura.com<img src="../img/tasa_cafe_de_altura.png" class="imgenDelCafe"></a>
+            <a href="../html/index.html">cafedealtura.com<img src="../img/tasa_cafe_de_altura.png" class="imgenDelCafe"></a>
         </section>
         <section class="headTitles">
-            <a href="Index.html">Tienda</a>
+            <a href="../html/store.html">Tienda</a>
             <a href="#">Suscripción</a>
             <a href="#">Para empresas</a>
             <a href="#">Sobre nosotros</a>
             <a href="#">Contacto</a>
         </section>
-        <section class="numberTelf">
-            <a><img src="../img/telefono_pequeño.png" class="imgTelf">+34 919 49 05 18</a>
-        </section>
-        <section class="loginButton">
-            <a href="#">Iniciar Sesión</a>
+        <section class="contactLogin">
+            <a class="numberTelf"><img src="../img/telefono_pequeño.png" class="imgTelf">+34 919 49 05 18</a>
+            <a href="#" class="loginButton">Iniciar Sesión</a>
         </section>
         <section class="imgTop">
-            <a><img src="../img/bolso_de_compras.png"></a>
+            <a href="../html/shoppingCar.html">
+                <img src="../img/bolso_de_compras.png" class="shoppingCar">
+                <p><span class="quantityProducts">0</span></p>
+            </a>
         </section>
     </nav>
-    <article class="latestOrigins">
-        <section class="tittleOrigenes">
-            <h2>Últimos orígenes</h2>
+    <article class="news">
+        <section class="tittleNovedades">
+            <h3>Últimos orígenes</h3>
         </section>
-        <section class="typesOfCoffees">
-            <div class="costaRicaTarrazu">
-                <img src="../img/Coffee bag Costa Rica.png">
-                <h3>Costa Rica Tarrazú</h3>
-                <p>9,00 €</p>
-                <button class="bottonAdd">Añadir</button>
-            </div>
-            <div class="colombiaLosNaranjos">
-                <img src="../img/Coffee bag Colombia.png">
-                <h3>Colombia Los Naranjos</h3>
-                <p>9,00 €</p>
-                <button class="bottonAdd">Añadir</button>
-            </div>
-            <div class="laosAmanecer">
-                <img src="../img/Coffee bag Laos.png">
-                <h3>Laos Amanecer</h3>
-                <p>9,00 €</p>
-                <button class="bottonAdd">Añadir</button>
-            </div>
-            <div class="etiopiaYrgacheff">
-                <img src="../img/Coffee bag Eriopia.png">
-                <h3>Etiopía Yrgacheff</h3>
-                <p>9,00 €</p>
-                <button class="bottonAdd">Añadir</button>
-            </div>
-        </section>
-        <section class="typesOfCoffees">
-            <div class="keniaNdunduri">
-                <img src="../img/Coffee bag Kenia Ndunduri.png">
-                <h3>Kenia Ndunduri</h3>
-                <p>15,00 €</p>
-                <button class="bottonAdd">Añadir</button>
-            </div>
-            <div class="etiopiaSidamo">
-                <img src="../img/Coffee bag Etiopía Sidamo.png">
-                <h3>Etiopía Sidamo</h3>
-                <p>17,00 €</p>
-                <button class="bottonAdd">Añadir</button>
-            </div>
-            <div class="costaRicaMonteBello">
-                <img src="../img/Coffee bag Costa Rica Monte Bello.png">
-                <h3>Costa Rica Monte Bello</h3>
-                <p>12,00 €</p>
-                <button class="bottonAdd">Añadir</button>
-            </div>
-            <div class="colombiaLaCasita">
-                <img src="../img/Coffe bag Colombia La Casita.png">
-                <h3>Colombia La Casita</h3>
-                <p>9,00 €</p>
-                <button  class="bottonSpent">Agotado</button>
-            </div>
+        <section class="containerCoffees">
+            <!-- aqui van los cafes -->
         </section>
     </article>
     <article class="betterConditions">
@@ -118,7 +68,7 @@
     <footer>
         <article class="beforeTheFooter">
             <section class="titleAndEndContact">
-                <a href="../index.html">cafedealtura.com<img src="../img/tasa_cafe_de_altura.png" class="imgCoffeEnd"></a>
+                <a href="../html/index.html">cafedealtura.com<img src="../img/tasa_cafe_de_altura.png" class="imgCoffeEnd"></a>
                 <p><b>Te ayudamos en</b></p>
 
                 <button class="buttonTelf"><img src="../img/telefono_pequeño.png" class="imgTelf">+34 919 49 05 18</button>
@@ -126,7 +76,7 @@
             </section>
             <section class="titleEnd">
                 <div class="contactAtTheEnd">
-                    <a href="Index.html">Tienda</a>
+                    <a href="../html/store.html">Tienda</a>
                     <a href="#">Suscripción</a>
                     <a href="#">Para empresas</a>
                     <a href="#">Sobre nosotros</a>
@@ -144,8 +94,6 @@
         </article>
     </footer>
 
-
-    <script src="main.js"></script>
+    <script src="../js/store.js"></script>
 </body>
-
 </html>

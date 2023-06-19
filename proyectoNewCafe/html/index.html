@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Café de Altura</title>
+    <link rel="stylesheet" href="../Css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
-    <title>Cafe de altura</title>
-</head>
 
+</head>
 <body>
     <nav id="page">
 
         <section class="titleOfPage">
-            <a href="index.html">cafedealtura.com<img src="img/tasa_cafe_de_altura.png" class="imgenDelCafe"></a>
+            <a href="index.html">cafedealtura.com<img src="../img/tasa_cafe_de_altura.png" class="imgenDelCafe"></a>
         </section>
         <section class="headTitles">
-            <a href="/ProyectoHighAltitudeCoffee/Tienda/Index.html">Tienda</a>
+            <a href="../html/store.html">Tienda</a>
             <a href="#">Suscripción</a>
             <a href="#">Para empresas</a>
             <a href="#">Sobre nosotros</a>
             <a href="#">Contacto</a>
         </section>
-        <section class="numberTelf">
-            <a><img src="img/telefono_pequeño.png" class="imgTelf">+34 919 49 05 18</a>
-        </section>
-        <section class="loginButton">
-            <a href="#">Iniciar Sesión</a>
+        <section class="contactLogin">
+            <a class="numberTelf"><img src="../img/telefono_pequeño.png" class="imgTelf">+34 919 49 05 18</a>
+            <a href="#" class="loginButton">Iniciar Sesión</a>
         </section>
         <section class="imgTop">
-            <a><img src="img/bolso_de_compras.png"></a>
+            <a href="../html/shoppingCar.html">
+                <img src="../img/bolso_de_compras.png" class="shoppingCar">
+                <p><span class="quantityProducts">0</span></p>
+            </a>
         </section>
-
     </nav>
     <article class="topMidPag">
         <section class="midText">
@@ -48,7 +46,7 @@
             </div>
         </section>
         <section class="midImg">
-            <a><img src="img/mano_recogiendo_cafe.png"></a>
+            <a><img src="../img/mano_recogiendo_cafe.png"></a>
         </section>
     </article>
     <article class="betterConditions">
@@ -57,18 +55,18 @@
         </section>
         <section class="sendConditions">
             <a class="shippingTable">
-                <img src="img/Tabla_con_chulito.png">
+                <img src="../img/Tabla_con_chulito.png">
                 <h3>Recibe tu pedido sin preocuparte</h3>
                 <p>Tienes cosas más importantes en la cabeza, por eso con nuestra suscripción de café, nunca te quedarás
                     sin tu taza de la mañana. </p>
             </a>
             <a class="shippingCar">
-                <img src="img/carro_de_envio.png">
+                <img src="../img/carro_de_envio.png">
                 <h3>Envío en 24/48h</h3>
                 <p>Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
             </a>
             <a class="giftDiscounts">
-                <img src="img/caja_de_regalo.png">
+                <img src="../img/caja_de_regalo.png">
                 <h3>Descuentos y beneficios</h3>
                 <p>Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para que lo descubras junto a
                     nosotros.</p>
@@ -79,34 +77,11 @@
         <section class="tittleNovedades">
             <h2>Novedades</h2>
         </section>
-        <section class="typesOfCoffees">
-            <div class="costaRicaTarrazu">
-                <img class="itemImg" src="img/Coffee bag Costa Rica.png">
-                <h3 class="nameCoffee">Costa Rica Tarrazú</h3>
-                <p class="price">9,00 €</p>
-                <button class="BottonAdd">Añadir</button>
-            </div>
-            <div class="colombiaLosNaranjos">
-                <img class="itemImg" src="img/Coffee bag Colombia.png">
-                <h3 class="nameCoffee">Colombia Los Naranjos</h3>
-                <p class="price">9,00 €</p>
-                <button class="BottonAdd">Añadir</button>
-            </div>
-            <div class="laosAmanecer">
-                <img class="itemImg" src="img/Coffee bag Laos.png">
-                <h3 class="nameCoffee">Laos Amanecer</h3>
-                <p class="price">9,00 €</p>
-                <button class="BottonAdd">Añadir</button>
-            </div>
-            <div class="etiopiaYrgacheff">
-                <img class="itemImg" src="img/Coffee bag Eriopia.png">
-                <h3 class="nameCoffee">Etiopía Yrgacheff</h3>
-                <p class="price">9,00 €</p>
-                <button class="BottonAdd">Añadir</button>
-            </div>
+        <section class="containerCoffees">
+            <!-- aqui van los cafes -->
         </section>
-        <a href="Tienda/Index.html">
-            <h4 class="seeEverything">Ver todos<img src="img/Icon Flecha.png"></h4>
+        <a href="../html/store.html">
+            <h4 class="seeEverything">Ver todos<img src="../img/Icon Flecha.png"></h4>
         </a>
     </article>
     <article class="questions">
@@ -142,7 +117,7 @@
         </section>
         <section class="weSolveYourQuestions">
             <a href="#">
-                <h4>Resolvemos tus dudas<img src="img/arrow White.png"></h4>
+                <h4>Resolvemos tus dudas<img src="../img/arrow White.png"></h4>
             </a>
         </section>
     </article>
@@ -152,11 +127,11 @@
             <p>Visita nuestra cafetería en el centro de la ciudad para probar los granos de café antes de hacer tu
                 pedido y llévate un descuento</p>
             <a href="#">
-                <h4>Cómo llegar<img src="img/Icon Flecha.png"></h4>
+                <h4>Cómo llegar<img src="../img/Icon Flecha.png"></h4>
             </a>
         </section>
         <section class="imgCoffeePot">
-            <img src="img/cafeteria panorama.png">
+            <img src="../img/cafeteria panorama.png">
         </section>
     </article>
     <article class="contactUs">
@@ -170,8 +145,8 @@
             </p>
             <p class="p3">742 Evergreen Terrace</p>
             <p class="p4">Springfield, OR 12345</p>
-            <p class="p5"><img src="img/Phone Gray.png">+1 (555) 123-4567</p>
-            <p class="p6"><img src="img/Mail.png">support@example.com</p>
+            <p class="p5"><img src="../img/Phone Gray.png">+1 (555) 123-4567</p>
+            <p class="p6"><img src="../img/Mail.png">support@example.com</p>
             <p class="p7">¿Buscas un trabajo? <b>Ver nuestras ofertas.</b></p>
         </section>
         <section class="form">
@@ -203,7 +178,7 @@
             </div>
             <div class="checkTerms">
                 <input type="checkbox" name="checkForm" id="checkForm" value="acept">
-                <label for="checkForm"><a id="termsandConditions" href="#">Acepto la <span id="strong">Política de
+                <label for="checkForm"><a id="termsandConditions">Acepto la <span id="strong">Política de
                             Privacidad</span> y
                         los <span id="strong">Términos y condiciones.</span></a></label>
             </div>
@@ -213,15 +188,15 @@
     <footer>
         <article class="beforeTheFooter">
             <section class="titleAndEndContact">
-                <a href="index.html">cafedealtura.com<img src="img/tasa_cafe_de_altura.png" class="imgCoffeEnd"></a>
+                <a href="../html/index.html">cafedealtura.com<img src="../img/tasa_cafe_de_altura.png" class="imgCoffeEnd"></a>
                 <p><b>Te ayudamos en</b></p>
 
-                <button class="buttonTelf"><img src="img/telefono_pequeño.png" class="imgTelf">+34 919 49 05 18</button>
-                <button class="emailSupport"><img src="img/mail White.png">support@example.com</button>
+                <button class="buttonTelf"><img src="../img/telefono_pequeño.png" class="imgTelf">+34 919 49 05 18</button>
+                <button class="emailSupport"><img src="../img/mail White.png">support@example.com</button>
             </section>
             <section class="titleEnd">
                 <div class="contactAtTheEnd">
-                    <a href="/ProyectoHighAltitudeCoffee/Tienda/Index.html">Tienda</a>
+                    <a href="../html/store.html">Tienda</a>
                     <a href="#">Suscripción</a>
                     <a href="#">Para empresas</a>
                     <a href="#">Sobre nosotros</a>
@@ -239,10 +214,6 @@
         </article>
     </footer>
 
-
-
-
-    <script src="main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
-
 </html>

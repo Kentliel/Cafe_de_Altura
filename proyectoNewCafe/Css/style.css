@@ -1,6 +1,7 @@
 * {
     margin: 0;
     text-decoration: none;
+    justify-items: center;
 }
 
 body {
@@ -56,13 +57,19 @@ a:link {
     font-size: 14px;
     line-height: 16px;
     text-align: center;
-    padding: 10px;  
+    padding: 10px;
 }
 
-.headTitles>a:hover{
+.headTitles>a:hover {
     background: rgba(247, 245, 243, 0.1);
     border-radius: 10px;
     padding: 10px;
+}
+
+.contactLogin{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
 }
 
 .numberTelf {
@@ -75,7 +82,7 @@ a:link {
 
 }
 
-.numberTelf>a {
+.numberTelf {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +90,7 @@ a:link {
     padding: 10px;
 }
 
-.numberTelf>a:hover{
+.numberTelf:hover {
     background: rgba(247, 245, 243, 0.1);
     border-radius: 10px;
     padding: 10px;
@@ -96,6 +103,7 @@ a:link {
     gap: 8px;
     background: #515051;
     border-radius: 4px;
+    color: white;
 
 }
 
@@ -107,8 +115,25 @@ a:link {
     text-decoration: none;
 }
 
-.imgTop{
+.imgTop {
     cursor: pointer;
+}
+
+.imgTop>a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.quantityProducts {
+    background: rgba(247, 245, 243, 0.1);
+    padding: 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: white;
 }
 
 .topMidPag {
@@ -247,10 +272,10 @@ a:link {
     color: rgba(42, 91, 69, 1);
 }
 
-.typesOfCoffees {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.containerCoffees {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
     align-items: center;
     border-radius: 8px;
     padding: 24px;
@@ -258,16 +283,16 @@ a:link {
     width: 100%;
 }
 
-.typesOfCoffees>div{
+.containerCoffees .coffeCart {
     border: 1px solid #E3DED7;
     border-radius: 6px;
 }
 
-.typesOfCoffees>div:hover{
+.containerCoffees .coffeCart:hover {
     background: rgba(227, 222, 215, 1);
 }
 
-.BottonAdd {
+.containerCoffees .coffeCart .add {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -285,7 +310,7 @@ a:link {
     font-size: inherit;
 }
 
-.BottonAdd:hover{
+.containerCoffees .coffeCart:hover .add {
     background-color: rgba(42, 91, 69, 1);
 }
 
@@ -323,7 +348,7 @@ a:link {
     text-align: justify;
 }
 
-.customerQuestions>div>p{
+.customerQuestions>div>p {
     margin-top: 8px;
     margin-bottom: 16px;
 }
@@ -338,15 +363,6 @@ a:link {
     margin-bottom: 16px;
 }
 
-.howDoIOrder>h3 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    color: rgba(43, 42, 43, 1);
-    text-decoration: none;
-}
-
 .lowPrice {
     display: flex;
     flex-direction: column;
@@ -357,15 +373,6 @@ a:link {
     margin-bottom: 16px;
 }
 
-.lowPrice>h3 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    color: rgba(43, 42, 43, 1);
-    text-decoration: none;
-}
-
 .sendToMyOffice {
     display: flex;
     flex-direction: column;
@@ -374,15 +381,6 @@ a:link {
     border-radius: 4px;
     background: #FFFFFF;
     margin-bottom: 16px;
-}
-
-.sendToMyOffice>h3 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    color: rgba(43, 42, 43, 1);
-    text-decoration: none;
 }
 
 .weSolveYourQuestions>a>h4 {
@@ -399,7 +397,7 @@ a:link {
     line-height: 16px;
 }
 
-.imgDesplegador{
+.imgDesplegador {
     background: rgb(255, 255, 255);
     color: #444;
     cursor: pointer;
@@ -413,23 +411,33 @@ a:link {
     border-radius: 4px;
 }
 
-.imgDesplegador.active, .imgDesplegador:hover{
+.imgDesplegador>h3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    color: rgba(43, 42, 43, 1);
+    text-decoration: none;
+}
+
+.imgDesplegador.active,
+.imgDesplegador:hover {
     background-color: #FFFFFF;
 }
 
-.imgDesplegador>h3::after{
-    content: url(img/arrowTop.png);
+.imgDesplegador>h3::after {
+    content: url(../img/arrowTop.png);
     font-size: 13px;
     color: #777;
     float: right;
     margin-left: 5px;
 }
 
-.imgDesplegador.active>h3::after{
-    content: url(img/arrowBot.png);
+.imgDesplegador.active>h3::after {
+    content: url(../img/arrowBot.png);
 }
 
-.howDoIOrder{
+.howDoIOrder {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
@@ -439,12 +447,12 @@ a:link {
     margin-top: -10px;
 }
 
-.howDoIOrder.show{
+.howDoIOrder.show {
     opacity: 1;
     max-height: 500px;
 }
 
-.lowPrice{
+.lowPrice {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
@@ -454,12 +462,12 @@ a:link {
     margin-top: -10px;
 }
 
-.lowPrice.show{
+.lowPrice.show {
     opacity: 1;
     max-height: 500px;
 }
 
-.sendToMyOffice{
+.sendToMyOffice {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
@@ -469,7 +477,7 @@ a:link {
     margin-top: -10px;
 }
 
-.sendToMyOffice.show{
+.sendToMyOffice.show {
     opacity: 1;
     max-height: 500px;
 }
@@ -632,8 +640,6 @@ a:link {
 #strong {
     font-weight: bold;
     text-decoration: underline;
-    color: rgba(55, 65, 81, 1);
-    ;
 }
 
 #buttonForm {
@@ -705,7 +711,7 @@ a:link {
     border-radius: 6px;
 }
 
-.emailSupport{
+.emailSupport {
     background: rgba(81, 80, 81, 1);
     padding: 12px 24px;
     display: flex;
@@ -720,7 +726,7 @@ a:link {
     border-radius: 6px;
 }
 
-.titleEnd{
+.titleEnd {
     display: flex;
     flex-direction: row;
     gap: 128px;
@@ -732,7 +738,7 @@ a:link {
 }
 
 
-.contactAtTheEnd{
+.contactAtTheEnd {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -740,11 +746,11 @@ a:link {
     justify-content: center;
 }
 
-.contactAtTheEnd>a{
+.contactAtTheEnd>a {
     color: rgba(255, 255, 255, 1);
 }
 
-.policiesAndConditions{
+.policiesAndConditions {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -753,7 +759,7 @@ a:link {
     margin-bottom: 63.61px;
 }
 
-.policiesAndConditions>a{
+.policiesAndConditions>a {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -762,4 +768,143 @@ a:link {
     color: rgba(255, 255, 255, 1);
     padding-top: 12px;
     padding-bottom: 12px;
+}
+
+.cestaTitle {
+    text-align: center;
+    color: rgb(42, 91, 69);
+    font-size: 1.5rem;
+    margin: 2.5rem 0;
+}
+
+.cestaTitle .quantityProducts{
+    color: #000;
+}
+
+.containerCesta {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 3rem;
+    width: 100%;
+}
+
+.contProdEnvioAndTipoEnvio {
+    width: 100%;
+}
+
+.prodEnvio .resumenCesta div img {
+    width: 55px;
+    margin-right: 1rem;
+}
+
+.prodEnvio .resumenCesta .moreLess {
+    display: flex;
+    align-items: center;
+}
+
+.joinDivs {
+    display: flex;
+}
+
+.prodEnvio .resumenCesta .moreLess * {
+    padding: 0.5rem 0.7rem;
+}
+
+.prodEnvio .resumenCesta .moreLess .cantidadCesta {
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.053);
+    border-radius: 50%;
+}
+
+.prodEnvio .resumenCesta .moreLess .btn {
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.prodEnvio .resumenCesta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.prodEnvio .resumenCesta .productDetail {
+    display: flex;
+}
+
+.prodEnvio .resumenCesta .productDetail div .bagsNames {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.containerTipoEnvio {
+    margin-top: 1rem;
+}
+
+.containerTipoEnvio .contOpcionEnvio {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.containerTipoEnvio .contOpcionEnvio input {
+    margin: 0.5rem 1.5rem 0.5rem 0.5rem;
+}
+
+.totalCesta {
+    background-color: rgb(247, 245, 243);
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+.totalCesta hr {
+    margin: 0.5rem 0;
+}
+
+.totalCesta .totCestaPrecios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalCesta .totCestaPrecios p {
+    margin-bottom: 10px;
+}
+
+.totalCesta .totCestaPrecios .ivaDetail {
+    font-size: 12px;
+    color: rgb(81, 80, 81);
+}
+
+.totalCesta .totalCestaButtons button {
+    border: none;
+    margin-top: 1rem;
+}
+
+.totalCesta .totalCestaButtons .btnCheckout {
+    background-color: rgba(42, 91, 69, 1);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.totalCesta .totalCestaButtons .btnSeguir {
+    background-color: rgb(247, 245, 243);
+    color: rgba(42, 91, 69, 1);
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.negritas {
+    font-weight: bold !important;
+}
+
+.copyRightsCesta {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }

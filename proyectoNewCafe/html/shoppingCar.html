@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="page">
+
+        <section class="titleOfPage">
+            <a href="../html/index.html">cafedealtura.com<img src="../img/tasa_cafe_de_altura.png"
+                    class="imgenDelCafe"></a>
+        </section>
+        <section class="headTitles">
+            <a href="../html/store.html">Tienda</a>
+            <a href="#">Suscripción</a>
+            <a href="#">Para empresas</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Contacto</a>
+        </section>
+        <section class="contactLogin">
+            <a class="numberTelf"><img src="../img/telefono_pequeño.png" class="imgTelf">+34 919 49 05 18</a>
+            <a href="#" class="loginButton">Iniciar Sesión</a>
+        </section>
+        <section class="imgTop">
+            <a href="../html/shoppingCar.html">
+                <img src="../img/bolso_de_compras.png" class="shoppingCar">
+                <p><span class="quantityProducts">0</span></p>
+            </a>
+        </section>
+    </nav>
+    <article class="news">
+        <section class="tittleNovedades">
+            <h3 class="cestaTitle">Cesta(<span class="quantityProducts">0</span>)</h3>
+        </section>
+        <div class="containerCesta">
+            <div class="contadorProdEnvioAndTipoEnvio">
+                <div class="prodEnvio">
+                    <h3>Productos</h3>
+                    <!-- aqui van los productos -->
+
+                </div>
+
+                <div class="containerTipoEnvio">
+                    <h3>Seleccionar envío</h3>
+                    <div class="contOpcionEnvio">
+                        <div class="joinDivs">
+                            <input class="inputsEnvio chequeado" type="radio" checked name="demoraEnvio" value=0>
+                            <div class="tipoEnvio">
+                                <p>Envío 5-7 días</p>
+                                <p>Opción estándar sin seguimiento</p>
+                            </div>
+                        </div>
+                        <p class="priceEnvio negritas">GRATIS</p>
+                    </div>
+                    <hr>
+                    <div class="contOpcionEnvio">
+                        <div class="joinDivs">
+                            <input class="inputsEnvio" type="radio" name="demoraEnvio" value=9>
+                            <div class="tipoEnvio">
+                                <p>Envío urgente 24h </p>
+                                <p>Recibe tu pedido en las siguientes 24h (Para pedidos realizados antes de <br> las
+                                    13:00).
+                                </p>
+                            </div>
+                        </div>
+                        <p class="priceResumen negritas">9,00 €</p>
+                    </div>
+                </div>
+            </div>
+            <div class="totalCesta">
+                <h3 class="negritas">Total del carrito</h3>
+                <hr>
+                <div>
+                    <div class="totCestaPrecios">
+                        <p>SUBTOTAL</p>
+                        <p class="totCestaSubtotal negritas">0 €</p>
+                    </div>
+                    <div class="totCestaPrecios">
+                        <p>ENVÍO</p>
+                        <p class="envioPrice negritas">GRATIS</p>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <div class="totCestaPrecios">
+                        <p class="negritas">TOTAL</p>
+                        <p class="totCestaTotal negritas">0 €</p>
+                    </div>
+                    <div class="totCestaPrecios">
+                        <p></p>
+                        <p class="ivaDetail">Incluye <span class="ivaTotal">0,00</span> de IVA</p>
+                    </div>
+                </div>
+                <div class="totalCestaButtons">
+                    <a href="../html/checkOut.html"><button class="btnCheckout">Ir a checkout</button></a>
+                    <a href="../pages/shop.html"><button class="btnSeguir">Seguir comprando</button></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+
+    <footer>
+        <article class="allRightsReserved">
+            <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
+        </article>
+    </footer>
+    <script src="../js/shoppingCar.js"></script>
+</body>
+
+</html>
